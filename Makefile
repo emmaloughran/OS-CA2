@@ -9,3 +9,7 @@ task2:
 task3:
 	curl https://www.dkit.ie > dkit.html
 
+
+##working although not  for pushing to a text file
+task4:
+	head -1 dkit.html; tail -1 dkit.html

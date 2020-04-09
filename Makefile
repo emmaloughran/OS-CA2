@@ -1,4 +1,4 @@
-##Section one
+###Section one
 
 task1:
 	printf "The quick brown fox jumps over the lazy dog \n" | wc -w
@@ -6,5 +6,6 @@ task1:
 task2:
 	printf "The quick brown fox jumps over the lazy dog \n"  | tr [:lower:] [:upper:]
 
-task3: 
+task3:
 	curl https://www.dkit.ie > dkit.html
+

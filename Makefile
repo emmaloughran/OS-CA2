@@ -11,7 +11,7 @@ task2:
 task3:
 	curl https://www.dkit.ie > dkit.html
 
-#source[1]- use tr
+#source[1]- use of tr
 task4:
 	tail -1 dkit.html | tr '<>' '[]' >> mangled.txt
 	printf "\n" >>mangled.txt

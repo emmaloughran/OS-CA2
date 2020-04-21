@@ -13,7 +13,7 @@ task3:
 
 #source[1]- use of tr
 task4:
-	tail -1 dkit.html | tr '<>' '[]' >> mangled.txt
-	printf "\n" >>mangled.txt
-	head -1 dkit.html | tr '<>' '[]' >> mangled.txt
+	tail -1 dkit.html | tr '<>' '[]' >> mangled.txt && printf "\n" >>mangled.txt && head -1 dkit.html | tr '<>' '[]' >> mangled.txt
 
+clean:
+	unlink mangled.txt && unlink dkit.html

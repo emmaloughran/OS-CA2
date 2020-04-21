@@ -12,4 +12,8 @@ task2:
 ##	rm output.txt hex.txt hex_values.txt
 	gcc task_two.c -o build/task_two
 	./build/task_two
-	rm hex.txt output.txt removed_hash_prepended.txt  hex_values.txt hex_removed_hash.txt
+	rm hex.txt output.txt   hex_values.txt hex_removed_hash.txt
+
+task3:
+	gcc task_three.c -o build/task_three
+	./build/task_three

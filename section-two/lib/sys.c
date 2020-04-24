@@ -4,13 +4,12 @@
    FILE *f;
    //unsigned int num[80];
    //uint32_t num[25];
-   int i=0;
-   int rv;
-   int num_values;
+	int i=0;
+	int rv;
+	int num_values;
+	f=fopen("rm_hash.txt","r");
+//	f=system("cat hex.txt |  tail -25 | tr -d '#'");
 
-   f=fopen("removed_hash_prepended.txt","r");
- //  f=fopen("removed_hash_prepended.txt","r");
- //  f=fopen("hex_removed_hash.txt","r");
    if (f==NULL){
      printf("unknown file\n");
      return 1;

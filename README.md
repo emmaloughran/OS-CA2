@@ -11,10 +11,10 @@ Emma Loughran and Polite Sitsha
 
 ## Section 1
 
-[1] Shanes lecture- demo of wc
-[2] https://www.cyberciti.biz/faq/how-to-use-linux-unix-tr-command/
-[3] https://www.computerhope.com/unix/curl.htm
-[4] https://stackoverflow.com/questions/8349771/unix-tr-find-and-replace
+[1] Shanes lecture- demo of wc 
+[2] https://www.cyberciti.biz/faq/how-to-use-linux-unix-tr-command/ 
+[3] https://www.computerhope.com/unix/curl.htm 
+[4] https://stackoverflow.com/questions/8349771/unix-tr-find-and-replace 
 [5] https://alvinalexander.com/blog/post/linux-unix/linux-head-tail-commands/
 
 

@@ -26,7 +26,17 @@ void read_file(char *file_name){
 	char *item;
 	int rec_count = 0;
 	char line[MAXLINE];
-	int i;
+	int p_shortest;
+	int v_shortest;
+	int p_longest;
+	int v_longest;
+	float p_total = 0.0;
+	float v_total = 0.0;
+	float p_average;
+	float v_average;
+
+	int p_count = 0;
+	int v_count = 0;
 
 	if(in == NULL){
 		printf("Error opening file\n");
@@ -48,15 +58,59 @@ void read_file(char *file_name){
 
 	fclose(in);
 
-	//loop through and reporr data
+	//loop through and report data
 
 	printf("\tRequest Path\t\tProc_Time\n");
- 	for (i = 0; i < rec_count; i++){
+ 	for (int i = 0; i < rec_count; ++i){
+
  			if(record[i].proc_time > 4){
-					printf("\t%s\t\t\t%d\n",record[i].request_path, record[i].proc_time);
-					printf("\n");
+				printf("\t%s\t\t%d\n",record[i].request_path, record[i].proc_time);
+
+ 				if (strcmp(record[i].request_path,"portfolio") == 0){
+ 					//	p_shortest = record[i].proc_time;
+ 					//	p_longest = record[i].proc_time;
+
+						if(record[i].proc_time < p_shortest){
+								p_shortest = record[i].proc_time;
+						}
+						if(record[i].proc_time > p_longest){
+								p_longest = record[i].proc_time;
+
+						}
+
+						p_total += record[i].proc_time;
+						p_count++;
+ 				}
+
+ 				if (strcmp(record[i].request_path,"videos") == 0){
+
+						if (record[i].proc_time < v_shortest){
+								v_shortest = record[i].proc_time;
+						}
+						if(record[i].proc_time > v_longest){
+								v_longest = record[i].proc_time;
+						}
+						v_total += record[i].proc_time;
+ 						v_count++;
+ 				}
+
+				printf("\n");
 			}
 	}
 
+	p_average = p_total / p_count;
+	v_average = v_total / v_count;
+
+	printf("Total number of request for Portfolio = %d\n", p_count);
+	printf("Total number of request for Videos = %d\n", v_count);
+
+	printf("\nShortest for the Portfolio path = %d\n", p_shortest);
+	printf("Longest time for the Portfolio path = %d\n", p_longest);
+
+	printf("\nShortest for Videos = %d\n", v_shortest);
+	printf("Longest for videos = %d\n", v_longest);
+
+	printf("\nAverage request time for Portfolio = %.2f\n", p_average);
+	printf("Average request time for Videos = %.2f\n", v_average);
 
 }

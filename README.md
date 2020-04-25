@@ -7,9 +7,9 @@ The objective is to investigate UnixTools and implement support for piping in Cu
 
 Emma Loughran and Polite Sitsha
 
-## Sources
+# Sources
 
-# Section 1
+## Section 1
 
 [1]Shanes lecture- demo of wc
 [2]https://www.cyberciti.biz/faq/how-to-use-linux-unix-tr-command/
@@ -18,7 +18,7 @@ Emma Loughran and Polite Sitsha
 [5]https://alvinalexander.com/blog/post/linux-unix/linux-head-tail-commands/
 
 
-# Section 2
+## Section 2
 
 [1]https://mkyong.com/regular-expressions/how-to-validate-hex-color-code-with-regular-expression/
 [2]https://www.cyberciti.biz/faq/grep-regular-expressions/

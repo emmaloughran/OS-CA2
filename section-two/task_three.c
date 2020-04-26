@@ -17,7 +17,6 @@ int check_len(uint32_t num[VALID_HEX], int count[VALID_HEX]);
 int append_0x();
 int assign_to_array_prepend(uint32_t num[VALID_HEX]);
 int appendff(int count[VALID_HEX], uint32_t num[VALID_HEX]);
-void sort_by_a(struct colors rgb[]);
 void print(struct colors rgb[]);
 
 int main ()
@@ -36,7 +35,7 @@ int main ()
 
 void print(struct colors rgb[])
 {
-	for(int i=0;i<=VALID_HEX;i++)
+	for(int i=0;i<VALID_HEX;i++)
 	{
 		printf("rgba(%u,%u,%u,%u)\n", rgb[i].r,rgb[i].g,rgb[i].b,rgb[i].a);
 	}
@@ -103,7 +102,6 @@ int assign_to_array_prepend(uint32_t num[VALID_HEX])
 	int i = 0;
 	int rv;
 	f=fopen("rm_hash_preped0x.txt","r");
-
 	while (i <= VALID_HEX)
 	{
 		rv = fscanf(f, "%x", &num[i]);

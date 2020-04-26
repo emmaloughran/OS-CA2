@@ -32,3 +32,10 @@ Emma Loughran and Polite Sitsha
 [10] https://stackoverflow.com/questions/29252261/how-to-merge-two-hex-numbers-to-one-number-and-then-convert-it-into-decimal/29252644
 
 ## Section 3
+[1] geeksforgeeks.org/cut-command-linux-examples
+[2] shellhacks.com/grep-or-grep-and-grep-not-match-multiple-patterns/
+[3] youtube.com/watch?v=sa-TUpSx1JA
+[4] whatismybrowser.com/guides/the-latest-user-agent/internet-explorer
+[5] wellho.net/resources/ex.php4?item=c210/lunces.c
+[6] stackoverflow.com/questions/5177877
+

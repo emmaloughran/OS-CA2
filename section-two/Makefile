@@ -1,19 +1,27 @@
-#section one
-task1:
+#Source [1]Regex for hex color codes
+#souce [2] using egrep with regex
+run-task-1:
 	egrep -w '^#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})?' colours.txt
-##	grep -ivE '^#([a-f0-9]{6}|[a-f0-9]{8})$$' colours.txt
 
-task2:
+run-task-2:
 ##removing the # from the front of each valid hex number
-	make task1 >output.txt
-	tail -n+3 output.txt >hex.txt
-	head -n -1 hex.txt > hex_values.txt
-	cat hex_values.txt | tr -d '#'> hex_removed_hash.txt
-##	rm output.txt hex.txt hex_values.txt
+#source[3] using head and tail
+#source[4] using tr and -d flag
+	make run-task-1 >hex.txt && cat hex.txt |  tail -26 | head -n -1 | tr -d '#' >rm_hash.txt
 	gcc task_two.c -o build/task_two
 	./build/task_two
-	rm hex.txt output.txt   hex_values.txt hex_removed_hash.txt
+	rm hex.txt
 
-task3:
+run-task-3:
+#source[9] sorting a csv file
 	gcc task_three.c -o build/task_three
-	./build/task_three
+	./build/task_three > output.csv
+	sort -t\, -n -k4,4 output.csv	> rgba-colours.txt
+	rm output.csv
+
+
+clean:
+	##rm rgba-colours.txt rm_hash_preped0x.txt rm_hash.txt
+	rm  rm_hash_preped0x.txt rm_hash.txt rgba-colours.txt
+
+

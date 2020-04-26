@@ -8,20 +8,22 @@ run-task-2:
 #source[3] using head and tail
 #source[4] using tr and -d flag
 	make run-task-1 >hex.txt && cat hex.txt |  tail -26 | head -n -1 | tr -d '#' >rm_hash.txt
+	mkdir build
 	gcc task_two.c -o build/task_two
 	./build/task_two
-	rm hex.txt
+	rm hex.txt -r build/
 
 run-task-3:
 #source[9] sorting a csv file
+	mkdir build
 	gcc task_three.c -o build/task_three
 	./build/task_three > output.csv
 	sort -t\, -n -k4,4 output.csv	> rgba-colours.txt
-	rm output.csv
+	rm output.csv -r build/
 
 
 clean:
 	##rm rgba-colours.txt rm_hash_preped0x.txt rm_hash.txt
-	rm  rm_hash_preped0x.txt rm_hash.txt rgba-colours.txt
+	rm  rm_hash_preped0x.txt rm_hash.txt rgba-colours.txt 
 
 

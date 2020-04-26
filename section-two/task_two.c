@@ -16,6 +16,7 @@ int main()
 	assign_to_array(num);
 	check_len(num,count);
 	extract_green(num,count);
+
 }
 
 //[5] bitwise operations

@@ -1,20 +1,20 @@
 #Section one
 
 #[1]
-task1:
+run-task-1:
 	printf "The quick brown fox jumps over the lazy dog \n" | wc -w
 
 #[2]- using tr
-task2:
+run-task-2:
 	printf "The quick brown fox jumps over the lazy dog \n"  | tr [:lower:] [:upper:]
 
 #[3] - use of curl
-task3:
+run-task-3:
 	curl https://www.dkit.ie > dkit.html
 
 #[4]- use of tr- find and replace
 #[5]- use of head and tail 
-task4:
+run-task-4:
 	tail -1 dkit.html | tr '<>' '[]' >> mangled.txt && printf "\n" >>mangled.txt && head -1 dkit.html | tr '<>' '[]' >> mangled.txt
 
 clean:

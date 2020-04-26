@@ -3,9 +3,9 @@
 This is a pair asssignment.
 The objective is to investigate UnixTools and implement support for piping in Custom C applications
 
-github link: https://github.com/emmaloughran/OS-CA2\n
-clone : https://github.com/emmaloughran/OS-CA2.git\n
-youtube video: https://youtu.be/c7_Jhya9PYw \n
+github link: https://github.com/emmaloughran/OS-CA2  
+clone : https://github.com/emmaloughran/OS-CA2.git  
+youtube video: https://youtu.be/c7_Jhya9PYw  
 
 ## Contributors:
 

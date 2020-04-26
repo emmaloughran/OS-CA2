@@ -5,7 +5,7 @@ The objective is to investigate UnixTools and implement support for piping in Cu
 
 github link: https://github.com/emmaloughran/OS-CA2  
 clone : https://github.com/emmaloughran/OS-CA2.git  
-youtube video: https://youtu.be/cT_4WyxQssI   
+youtube video: https://drive.google.com/file/d/1pA_73zvFlwckybwtSpkmviRCadcDPtV-/view     
 
 ## Contributors:
 

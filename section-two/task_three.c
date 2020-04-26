@@ -24,11 +24,17 @@ int main ()
 	int count [VALID_HEX] ={0};
 	uint32_t num [VALID_HEX];
 
+	//after removing the '#' from each hex number in the Makefil, appen 0x to each hex number so it is in base 16
 	append_0x();
+	//assign all of the numbers with prepended 0x to an array 
 	assign_to_array_prepend(num);
+	//check the length of each unisigned int
 	check_len(num,count);
+	//based on the length - concatenate FF to the end of the hex number- if it is a 6 digit hex number, append, if not, do nothing
 	appendff(count,num);
+	//extract rgba values and add to array of RGBA color values
 	rgba_values(num,rgb);
+	//print the colors in format rgba(r,g,b,a)
 	print(rgb);
 
 }

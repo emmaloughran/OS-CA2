@@ -13,8 +13,11 @@ int main()
 	int count[VALID_HEX]={0};
 	uint32_t num[VALID_HEX];	
 
+	//assign all lines of the hex numbers text file to an array
 	assign_to_array(num);
+	//check the lenght of each array element- whether they are 6 or 8 characters in length
 	check_len(num,count);
+	//extract the green value from each array element based on whether they are 6 or 8 characters in length
 	extract_green(num,count);
 
 }

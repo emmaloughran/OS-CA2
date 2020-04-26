@@ -23,6 +23,5 @@ run-task-3:
 
 clean:
 	##rm rgba-colours.txt rm_hash_preped0x.txt rm_hash.txt
-	rm  rm_hash_preped0x.txt rm_hash.txt rgba-colours.txt hex.txt output.csv ./build/task_three ./build/task_two
-
+	rm  rm_hash_preped0x.txt rm_hash.txt rgba-colours.txt hex.txt output.csv  ./build/task_two ./build/task_three
 
